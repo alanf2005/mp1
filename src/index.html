@@ -4,10 +4,234 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <meta name="description" content="Alan Finkelstein studies computer science and music at the University of Illinois Urbana-Champaign.">
+        <title>Alan Finkelstein | Computer Science + Music</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,800&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <!-- Sticky navbar: shrinks on scroll and highlights the current section -->
+        <header class="site-header">
+            <nav class="container nav-inner" aria-label="Main">
+                <a class="nav-brand" href="#home" aria-label="Back to top">AF</a>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#courses">Courses</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#music">Music</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero: fixed background image, vertically centered content -->
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <div class="hero-staff">
+                        <h1 class="hero-name">Alan Finkelstein</h1>
+                    </div>
+                    <p class="hero-tagline">Computer science and music at the University of Illinois Urbana-Champaign. I build AI systems that read, write, and make decisions.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">See my projects</a>
+                        <a class="button button-ghost" href="#contact">Get in touch</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About: three-column layout -->
+            <section id="about" class="section section-light">
+                <div class="container">
+                    <h2 class="section-title">About</h2>
+                    <p class="section-intro">I study computer science and music, and I'm most interested in where language, learning, and sound meet.</p>
+
+                    <div class="columns">
+                        <article class="column">
+                            <span class="column-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+                            <h3>Education</h3>
+                            <p><strong>University of Illinois Urbana-Champaign</strong></p>
+                            <p>B.S. in Computer Science + Music</p>
+                            <p>Expected graduation: 2027</p>
+                            <p class="column-note">My coursework covers algorithms, machine learning, natural language processing, and databases.</p>
+                        </article>
+
+                        <article class="column">
+                            <span class="column-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+                            <h3>Skills</h3>
+                            <dl class="skill-list">
+                                <dt>Programming</dt>
+                                <dd>Python, C++, C, Java, SQL, JavaScript, HTML/CSS</dd>
+                                <dt>Machine learning and data</dt>
+                                <dd>PyTorch, scikit-learn, pandas, NumPy, sentence-transformers</dd>
+                                <dt>Frameworks and tools</dt>
+                                <dd>React, Django, Docker, Git, Selenium</dd>
+                                <dt>Spoken languages</dt>
+                                <dd>English and Russian (fluent), Spanish (conversational)</dd>
+                            </dl>
+                        </article>
+
+                        <article class="column">
+                            <span class="column-icon"><i class="fa-solid fa-music" aria-hidden="true"></i></span>
+                            <h3>Interests</h3>
+                            <ul class="interest-list">
+                                <li><strong>Music</strong>The other half of my degree, from theory to performance.</li>
+                                <li><strong>Chess</strong>Planning several moves ahead, which turns out to be good practice for writing algorithms.</li>
+                                <li><strong>Poker</strong>Making decisions with incomplete information, the same problem my trading agent tackles.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Courses: carousel with side arrows -->
+            <section id="courses" class="section section-dark">
+                <div class="container">
+                    <h2 class="section-title">Coursework</h2>
+                    <p class="section-intro">Selected upper-level courses, grouped by area. Use the arrows to browse.</p>
+
+                    <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Coursework" tabindex="0">
+                        <div class="carousel-viewport">
+                            <ul class="carousel-track">
+                                <li class="carousel-slide" aria-roledescription="slide" aria-label="1 of 4">
+                                    <h3>Foundations</h3>
+                                    <p>The theory and structures everything else is built on.</p>
+                                    <ul class="course-list">
+                                        <li><span class="course-code">CS 225</span>Data Structures</li>
+                                        <li><span class="course-code">CS 374</span>Introduction to Algorithms and Models of Computation</li>
+                                        <li><span class="course-code">CS 361</span>Probability and Statistics for Computer Science</li>
+                                    </ul>
+                                </li>
+                                <li class="carousel-slide" aria-roledescription="slide" aria-label="2 of 4">
+                                    <h3>AI and machine learning</h3>
+                                    <p>From search and planning to training models on real data.</p>
+                                    <ul class="course-list">
+                                        <li><span class="course-code">CS 440</span>Artificial Intelligence</li>
+                                        <li><span class="course-code">CS 441</span>Applied Machine Learning</li>
+                                        <li><span class="course-code">CS 446</span>Machine Learning</li>
+                                    </ul>
+                                </li>
+                                <li class="carousel-slide" aria-roledescription="slide" aria-label="3 of 4">
+                                    <h3>Language and information</h3>
+                                    <p>How computers find, rank, and understand text.</p>
+                                    <ul class="course-list">
+                                        <li><span class="course-code">CS 447</span>Natural Language Processing</li>
+                                        <li><span class="course-code">CS 410</span>Text Information Systems</li>
+                                    </ul>
+                                </li>
+                                <li class="carousel-slide" aria-roledescription="slide" aria-label="4 of 4">
+                                    <h3>Data and the web</h3>
+                                    <p>Storing data well and putting it in front of people.</p>
+                                    <ul class="course-list">
+                                        <li><span class="course-code">CS 411</span>Database Systems</li>
+                                        <li><span class="course-code">CS 409</span>The Art of Web Programming</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous slide">
+                            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        <button class="carousel-arrow carousel-next" type="button" aria-label="Next slide">
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="carousel-dots" role="group" aria-label="Choose a slide"></div>
+                </div>
+            </section>
+
+            <!-- Projects: cards that open modal windows -->
+            <section id="projects" class="section section-light">
+                <div class="container">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-intro">Two recent builds. Open one to see the details.</p>
+
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <p class="project-date">March 2026 to present</p>
+                            <h3>Polymarket trading agent</h3>
+                            <p>A team project building an AI agent that trades autonomously on Polymarket.</p>
+                            <button class="button button-primary" type="button" data-modal-open="modal-polymarket">View details</button>
+                        </article>
+
+                        <article class="project-card">
+                            <p class="project-date">January to May 2025</p>
+                            <h3>Wikipedia-style article generator</h3>
+                            <p>A pipeline that writes fact-grounded articles with automatically generated references.</p>
+                            <button class="button button-primary" type="button" data-modal-open="modal-articles">View details</button>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Music: HTML5 video -->
+            <section id="music" class="section section-dark">
+                <div class="container container-narrow">
+                    <h2 class="section-title">Music</h2>
+                    <p class="section-intro">The other half of my degree happens outside the terminal.</p>
+                    <div class="video-frame">
+                        <video class="video" controls preload="metadata" playsinline>
+                            <source src="assets/video.mp4" type="video/mp4">
+                            Your browser can't play this video.
+                        </video>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer with social media icons -->
+        <footer id="contact" class="site-footer">
+            <div class="container">
+                <h2 class="footer-title">Get in touch</h2>
+                <p>The best way to reach me is on LinkedIn.</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/alan-finkelstein/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/alanf2005" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer-meta">&copy; 2026 Alan Finkelstein</p>
+            </div>
+        </footer>
+
+        <!-- Modal windows -->
+        <div class="modal" id="modal-polymarket" role="dialog" aria-modal="true" aria-labelledby="modal-polymarket-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <button class="modal-close" type="button" data-modal-close aria-label="Close">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <p class="project-date">March 2026 to present</p>
+                <h2 id="modal-polymarket-title">Polymarket trading agent</h2>
+                <p>A group project to build an AI agent that trades on Polymarket without human input.</p>
+                <ul>
+                    <li>Building the agent's decision-making on top of historical market data.</li>
+                    <li>Integrating agent workflows with the NCSA LLM.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-articles" role="dialog" aria-modal="true" aria-labelledby="modal-articles-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <button class="modal-close" type="button" data-modal-close aria-label="Close">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <p class="project-date">January to May 2025</p>
+                <h2 id="modal-articles-title">Wikipedia-style article generator</h2>
+                <p>A pipeline that researches a topic and writes a structured, referenced article about it.</p>
+                <ul>
+                    <li>Combined GPT-4, retrieval-augmented generation, and the Google Custom Search API to keep articles grounded in sources.</li>
+                    <li>Filtered redundant sources with embedding-based semantic deduplication.</li>
+                    <li>Generated structured output with references created automatically.</li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
